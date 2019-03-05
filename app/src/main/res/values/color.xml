@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#EEEEEE</color>
+    <color name="colorAccent">#434343</color>
+    <color name="primaryGrey">#A2A2A2</color>
+
+
+    <!--Alarm View Color-->
+
+    <!--OTR APP colors-->
+    <color name="btn_background">#369E37</color>
+    <color name="white">#ffffff</color>
+    <color name="login_text_label">#5B5B5B</color>
+    <color name="black">#000000</color>
+    <color name="border_color">#848484</color>
+    <color name="background">#B3B3B3</color>
+    <color name="edit_text_color">#666666</color>
+
+
+    <!--StudentApp-->
+    <color name="halfTrans">#72000000</color>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ToolBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/margin_24dp">
+
+    <TextView
+        android:id="@+id/action_back"
+        style="@style/SmallTextStyle"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:drawableStart="@drawable/back"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/gotham_book"
+        android:paddingTop="@dimen/margin_8dp"
+        android:paddingBottom="@dimen/margin_8dp"
+        android:paddingEnd="@dimen/margin_8dp"
+        android:paddingStart="@dimen/margin_16dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/action_menu"
+        style="@style/SmallTextStyle"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:drawableStart="@drawable/ic_menu"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/gotham_book"
+        android:padding="@dimen/margin_8dp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/action_title"
+        style="@style/TitleTextStyle"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/gotham_book"
+        android:textColor="@color/black"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/action_notification"
+        style="@style/SmallTextStyle"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/action_Profile"
+        android:drawableStart="@mipmap/notification"
+        android:fontFamily="@font/gotham_book"
+        android:gravity="center"
+        android:padding="@dimen/margin_8dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/action_notification_badge"
+        android:layout_width="@dimen/margin_20dp"
+        android:layout_height="@dimen/margin_20dp"
+        android:layout_alignEnd="@id/action_notification"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@drawable/notification_badge_bg"
+        android:fontFamily="@font/gotham_book"
+        android:text="1"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/action_Profile"-->
+    <!--style="@style/SmallTextStyle"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:drawableStart="@mipmap/profile_round"-->
+    <!--android:fontFamily="@font/gotham_book"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@drawable/toolbar_profile_background"-->
+    <!--android:padding="@dimen/margin_8dp"-->
+    <!--android:visibility="visible" />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/action_Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/margin_8dp"
+        android:src="@mipmap/profile_round"
+        app:civ_border_color="@color/btn_background"
+        app:civ_border_width="1dp"
+        android:visibility="invisible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"/>
+
+</RelativeLayout>

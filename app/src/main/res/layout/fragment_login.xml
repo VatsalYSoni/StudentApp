@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.demo.studentapp.ui.login.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@id/btnLogin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_student"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/margin_8dp"
+                android:layout_weight="0.2" />
+
+            <EditText
+                android:id="@+id/edStudentID"
+                style="@style/LoginEditText"
+                android:layout_below="@+id/ivImage"
+                android:hint="Student ID"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                style="@style/LoginEditText"
+                android:layout_below="@+id/edStudentID"
+                android:hint="Phone Number"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:inputType="phone" />
+
+
+            <EditText
+                android:id="@+id/edPassword"
+                style="@style/LoginEditText"
+                android:layout_below="@+id/edEmail"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:hint="password"
+                android:inputType="textPassword" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/margin_8dp"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/LoginBtn"
+            android:layout_alignParentBottom="true"
+            android:text="login" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

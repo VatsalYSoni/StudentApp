@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!--<item name="android:textColor">@color/colorPrimaryDark</item>-->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:alertDialogStyle">@style/DialogStyle</item>
+        <item name="android:fontFamily">@font/gotham_book</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolBarStyle" parent="ToolBarStyle.Base">
+        <item name="contentInsetEnd">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetRight">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="ToolBarStyle.Base">
+        <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+        <item name="theme">@style/AppTheme.AppBarOverlay</item>
+    </style>
+
+
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+        <item name="android:textColorSecondaryInverse">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/background_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/colorAccent</item>
+    </style>
+
+    <!--Style for a button that opens an AddLabelDialog-->
+
+
+    <style name="SmallTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">@font/gotham_book</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/primaryGrey</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:layout_gravity">center</item>-->
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/text_size_title_toolbar</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="NavigationDrawerStyle" parent="AppTheme">
+        <item name="android:listDivider">@color/black</item>
+        <item name="android:textSize">12sp</item><!-- text size in menu-->
+        <item name="android:textColor">@color/black</item><!-- text color in menu-->
+        <item name="android:listPreferredItemHeightSmall">44dp</item><!-- item size in menu-->
+    </style>
+
+
+    <style name="LoginEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/margin_54dp</item>
+        <item name="android:layout_marginEnd">@dimen/margin_16dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_16dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/border_color</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+        <item name="android:fontFamily">@font/gotham_book</item>
+        <item name="android:textColor">@color/edit_text_color</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+    </style>
+
+    <style name="LoginBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/margin_56dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <!--<item name="android:background">@drawable/btn_background</item>-->
+        <item name="android:background">@android:color/holo_blue_dark</item>
+        <item name="android:fontFamily">@font/gotham_book</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
